@@ -8,7 +8,6 @@ RSpec.describe PodkstrServeClient, pact: true do
   subject { PodkstrServeClient.new }
 
   describe 'post_media' do
-
     before do
       podkstrserve.
         upon_receiving("a media").
@@ -23,6 +22,5 @@ RSpec.describe PodkstrServeClient, pact: true do
     it "saves the link to the file" do
       expect(subject.post_media).to eq(201)
     end
-
   end
 end
