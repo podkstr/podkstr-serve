@@ -4,4 +4,6 @@ gem 'grape'
 
 group :test do
   gem 'rspec'
+  gem 'pact'
+  gem 'httparty'
 end

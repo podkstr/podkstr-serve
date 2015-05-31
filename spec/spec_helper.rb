@@ -1,3 +1,5 @@
+require_relative '../app/podkstr_serve_client'
+
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
@@ -12,7 +14,7 @@ RSpec.configure do |config|
   end
 
   config.disable_monkey_patching!
-  config.warnings = true
+  # config.warnings = true
   config.profile_examples = 10
   config.order = :random
 

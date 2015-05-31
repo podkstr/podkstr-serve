@@ -1,0 +1,30 @@
+{
+  "consumer": {
+    "name": "Podkstr Serve Client"
+  },
+  "provider": {
+    "name": "Podkstr Serve"
+  },
+  "interactions": [
+    {
+      "description": "a media",
+      "request": {
+        "method": "post",
+        "path": "",
+        "query": "slug=2015%2F05%2F31%2Ftesting&id=010&link=http%3A%2F%2Furl.to%2Fthe.file",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}
