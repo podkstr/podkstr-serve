@@ -5,6 +5,8 @@ gem 'grape'
 group :development do
   gem 'shotgun'
   gem 'guard-rspec', require: false
+  gem 'guard-bundler', require: false
+  gem 'guard-rake', require: false
 end
 
 group :test do
